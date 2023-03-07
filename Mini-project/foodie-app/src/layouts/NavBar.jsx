@@ -4,7 +4,7 @@ import NavBarData from "../data/NavbarData";
 
 function NavBar() {
   return (
-    <>
+    <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiar">
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/">
@@ -37,7 +37,10 @@ function NavBar() {
               })}
               <li className="nav-item justify-content-end">
                 <NavLink className="nav-link justify-content-end" to="/">
-                  <button className="btn btn-danger rounded-pill justify-end" type="submit">
+                  <button
+                    className="btn btn-danger rounded-pill justify-end"
+                    type="submit"
+                  >
                     Get App
                   </button>
                 </NavLink>
@@ -46,7 +49,7 @@ function NavBar() {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 }
 

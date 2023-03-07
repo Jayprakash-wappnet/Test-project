@@ -36,4 +36,4 @@ const NavBarData = [
     className2: "nav-link",
   },
 ];
- export default NavBarData
+export default NavBarData;

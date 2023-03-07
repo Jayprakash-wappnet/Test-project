@@ -1,9 +1,8 @@
-
 const FoodIteam = [
   {
     id: "1",
     name: "Italian",
-    icon:"./assets/Italian.jpg",
+    icon: "./assets/Italian.jpg",
   },
   {
     id: "2",
@@ -42,4 +41,4 @@ const FoodIteam = [
   },
 ];
 
-export default FoodIteam
+export default FoodIteam;
