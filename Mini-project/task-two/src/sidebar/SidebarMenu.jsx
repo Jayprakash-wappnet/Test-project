@@ -1,4 +1,5 @@
 import React from "react";
+import Menu from "./Menu";
 import { BsFillCalendarMonthFill } from "react-icons/bs";
 import { FaSearch } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
@@ -17,44 +18,71 @@ function SidebarMenu() {
             <img
               src="./assets/logo-1.png"
               alt="Not found"
-              className="left-[40px]"/>
+              className="left-[40px]"
+            />
           </div>
         </div>
         <div>
-          <button className="w-[260px] h-[56px] left-[24px] mt-[9px] bg-[#2E63F6] rounded-lg	 absolute text-[#FFFFFF]">
+          <button className="w-[260px] h-[56px] left-[24px] mt-[9px] bg-[#2E63F6] rounded-lg	  text-[#FFFFFF]">
             Create New Toure +
           </button>
         </div>
-        <div className="flex items-center">
-          <button className="flex w-[260px] items-center h-[56px] left-[24px] top-[184px] absolute text-[#555B67] ml-2">
-            <BsFillCalendarMonthFill className="mr-3" />
-            Calender
-          </button>
-          <button className="flex w-[260px] items-center h-[56px] left-[24px] top-[239px] absolute text-[#555B67] ml-2">
-            <FaSearch className="mr-3" /> Search Property
-          </button>
-          <button className="flex w-[260px] items-center h-[56px] left-[24px] top-[303px] absolute text-[#555B67] ml-2">
-            <FaUsers className="mr-3" />
-            Clients
-          </button>
-          <button className="flex w-[260px] items-center h-[56px] left-[24px] top-[367px] absolute text-[#555B67] ml-2">
-            <IoIosListBox className="mr-3" />
-            MLS Lists
-          </button>
-          <button className="flex w-[260px] items-center h-[56px] left-[24px] top-[431px] absolute text-[#555B67] ml-2">
-            <IoNotificationsSharp className="mr-3" />
-            Notifications
-          </button>
-          <button className="flex w-[260px] items-center h-[56px] left-[24px] top-[499px] absolute text-[#555B67] ml-2">
-            <RiShieldUserFill className="mr-3" />
-            Users & Teams
-          </button>
+        <div className="">
+          <Menu
+            icon={
+              <>
+                <BsFillCalendarMonthFill />
+              </>
+            }
+            text="Calender"
+          />
+          <Menu
+            icon={
+              <>
+                <FaSearch />
+              </>
+            }
+            text="Search Property"
+          />
+          <Menu
+            icon={
+              <>
+                <FaUsers />
+              </>
+            }
+            text="Clients"
+          />
+          <Menu
+            icon={
+              <>
+                <IoIosListBox />
+              </>
+            }
+            text="MLS Lists"
+          />
+          <Menu
+            icon={
+              <>
+                <IoNotificationsSharp />
+              </>
+            }
+            text="Notifications"
+          />
+          <Menu
+            icon={
+              <>
+                <RiShieldUserFill />
+              </>
+            }
+            text="Users & Teams"
+          />
         </div>
-        <div>
-          <p className="absolute top-[984px] width-[96px] left-[40px] height-[24px] text-lg items-center">
+
+        <div className="mt-[429px]">
+          <p className=" width-[96px] mr-[172px] ml-[40px] height-[24px] text-lg">
             Need help?
           </p>
-          <p className="flex absolute top-[1024px] width-[75px] left-[24px] height-[24px] text-base items-center">
+          <p className="flex mt-[16px] width-[75px] ml-[42px] height-[24px] text-base items-center">
             <MdOutlineLiveHelp className="mr-3" /> Help Desk
           </p>
         </div>
